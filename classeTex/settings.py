@@ -23,7 +23,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #others
+    'django_tex',
+    #my apps
     'home',
+    'texToPdf',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +55,11 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
         },
+    },
+    {
+        'NAME': 'tex',
+        'BACKEND': 'django_tex.engine.TeXEngine', 
+        'APP_DIRS': True,
     },
 ]
 

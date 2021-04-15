@@ -11,12 +11,16 @@
     <header>
         <img class = "logo" src ="{% static "assets/logo.png" %}">
     </header>  
-    <div class = "container">
-        <div class = "input">
-            <label for="quantity">Número de questões:</label>
-            <input type="number" id="quantity" name="quantity" value=5>
+    <form action="{% url 'texToPdf:generatePdf' %}" method="get">
+    {% csrf_token %}  
+        <div class = "container">
+            <div class = "input">
+                <label for="quantity">Número de questões:</label>
+                <input type="number" id="quantity" name="quantity" value="5">
+            </div>
+            <input type="submit" class="btn" value="Dowload">
+            {% comment %} <button class="btn" onclick="{% url 'generatePdf' %}" type="button">Dowload</button> {% endcomment %}
         </div>
-        <button class="btn">Dowload</button>
-    </div>
+    </form>
 </body>
 </html>

@@ -1,5 +1,8 @@
 from django.shortcuts import render
+from django_tex.shortcuts import render_to_pdf
 
-# Create your views here.
 def home(request):
-     return render(request, 'index.html')
+     # template_name = 'test.tex'
+     # context = {'foo': 'Ola mundo'}
+     # return render_to_pdf(request, template_name, context, filename='test.pdf')
+     return render(request, 'index.html', {'quantity':5})

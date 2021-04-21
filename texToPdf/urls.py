@@ -3,5 +3,5 @@ from . import views
 
 app_name = 'texToPdf'
 urlpatterns = [
-    path(r'^generatePdf/novo', views.generate, name='generatePdf'),
+    path(r'^generatePdf/', views.generate, name='generatePdf'),
 ]

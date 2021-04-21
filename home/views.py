@@ -5,4 +5,4 @@ def home(request):
      # template_name = 'test.tex'
      # context = {'foo': 'Ola mundo'}
      # return render_to_pdf(request, template_name, context, filename='test.pdf')
-     return render(request, 'index.html', {'quantity':5})
+     return render(request, 'index.html')

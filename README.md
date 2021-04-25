@@ -57,3 +57,9 @@ Exemplo de arquivo gerado:
 ## Como
 
 Este projeto foi construído em Python, utilizando Django + [django-tex](https://pypi.org/project/django-tex/)
+
+## Todo
+
+- [ ] Pré-visualização dos exercícios na home
+- [ ] Upload dos arquivos
+- [ ] Selecionar a tag dos execícios da lista 

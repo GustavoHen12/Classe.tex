@@ -2,7 +2,7 @@
 
 ![home](img/home.png)
 
-A idéia básica aqui é, gerar listas com exercícios selecionados de forma aleatória a partir de arquivos Latex.
+A idéia básica aqui é, um site que gera listas com exercícios selecionados de forma aleatória a partir de arquivos Latex.
 
 As questões são selecionadas de acordo com tags, estas estão na primeira linha do arquivo .tex de cada questão. Então, é possível gerar, por exemplo, provas com a primeira questão selecionada a partir de todas as questões com a tag `easy`, a segunda a partir das questões com as tags `medium` e `math`, e assim por diante.
 
@@ -53,3 +53,7 @@ Seu documento foi gerado com êxito, veja abaixo as questões que foram adiciona
 
 Exemplo de arquivo gerado:
 ![exemplo](img/exemplo.png)
+
+## Como
+
+Este projeto foi construido em Pyhon, utilizando Django + [django-tex](https://pypi.org/project/django-tex/)
